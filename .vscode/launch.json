@@ -1,0 +1,59 @@
+// {
+//     "version": "0.2.0",
+//     "configurations": [
+//         {
+//             "name": "Python: Record Script",
+//             "type": "debugpy",
+//             "request": "launch",
+//             "program": "${workspaceFolder}/lerobot/scripts/control_robot.py",
+//             "args": [
+//                 "record",
+//                 "--robot-path",
+//                 "lerobot/configs/robot/koch.yaml",
+//                 "--fps",
+//                 "30",
+//                 "--repo-id",
+//                 "local_user/koch_test3",
+//                 "--tags",
+//                 "tutorial",
+//                 "--warmup-time-s",
+//                 "5",
+//                 "--episode-time-s",
+//                 "15",
+//                 "--reset-time-s",
+//                 "5",
+//                 "--num-episodes",
+//                 "2",
+//                 "--push-to-hub",
+//                 "0"
+//             ],
+//             "console": "integratedTerminal"
+//         }
+//     ]
+// }
+
+
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Train Script",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/lerobot/scripts/train.py",
+            "args": [
+                "dataset_repo_id=['local_user/koch_test_1','local_user/koch_test2']",
+                "policy=act_koch_real",
+                "env=koch_real",
+                "hydra.run.dir=outputs/train/act_koch_test",
+                "hydra.job.name=act_koch_test",
+                "device=cuda",
+                "wandb.enable=true"
+            ],
+            "console": "integratedTerminal",
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}"
+            }
+        }
+    ]
+}

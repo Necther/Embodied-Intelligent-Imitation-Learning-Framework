@@ -1,0 +1,30 @@
+
+# 录制数据
+python lerobot/scripts/control_robot.py record   --robot-path lerobot/configs/robot/koch.yaml   --fps 30   --repo-id local_user/koch_tea6   --tags tutorial   --warmup-time-s 5   --episode-time-s 18   --reset-time-s 8   --num-episodes 25   --push-to-hub 0
+
+
+
+python lerobot/scripts/control_robot.py record \
+  --robot-path lerobot/configs/robot/koch.yaml \
+  --fps 30 \
+  --repo-id eval_user/eval_tea2 \
+  --tags tutorial eval \
+  --warmup-time-s 5 \
+  --episode-time-s 18 \
+  --reset-time-s 8 \
+  --num-episodes 10 \
+  --push-to-hub 0 \
+  -p outputs/train/act_koch_tea/checkpoints/last/pretrained_model
+
+
+  python lerobot/scripts/control_robot.py record \
+  --robot-path lerobot/configs/robot/koch.yaml \
+  --fps 30 \
+  --repo-id eval_user/eval_tea1 \
+  --tags tutorial eval \
+  --warmup-time-s 5 \
+  --episode-time-s 20 \
+  --reset-time-s 5 \
+  --num-episodes 10 \
+  --push-to-hub 0 \
+  -p outputs/train/push_tea/checkpoints/last/pretrained_model
