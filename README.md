@@ -2,11 +2,11 @@
 
 ## 1、项目介绍
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;EmbodLearn为机器人模仿学习提供了一个全面且易用的解决方案。它不仅降低了技术门槛，还通过模块化设计和先进算法实现，为研究者和工程师提供了强大的工具。
+EmbodLearn为机器人模仿学习提供了一个全面且易用的解决方案。它不仅降低了技术门槛，还通过模块化设计和先进算法实现，为研究者和工程师提供了强大的工具。
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;随着模仿学习技术的不断发展，我们可以期待这个框架在更多复杂任务和机器人平台上的应用，进一步推动智能机器人技术的普及和发展。
+随着模仿学习技术的不断发展，我们可以期待这个框架在更多复杂任务和机器人平台上的应用，进一步推动智能机器人技术的普及和发展。
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;如果你对机器人学习感兴趣，不妨尝试这个框架，开启你的智能机器人开发之旅！
+如果你对机器人学习感兴趣，不妨尝试这个框架，开启你的智能机器人开发之旅！
 
 ## 2、环境配置
 
@@ -276,3 +276,16 @@ python lerobot/scripts/control_robot.py record \
 ![image](https://github.com/Necther/Embodied-Intelligent-Imitation-Learning-Framework/blob/main/tmp/img/image-20251029104059788.png)
 
 ​                                                               ACT算法在真实环境任务的效果图
+
+## 
+
+### 项目与单位关联声明
+
+本项目《迅摹·具身智能学习框架》（Xunmo Embodied Intelligent Learning Framework）由七扇窗（武汉）科技有限公司（SevenWindows AI Tech Co., Ltd.）发起并持续维护，旨在为具身智能教学与多智能体学习提供统一的开源实验平台。
+项目全部代码、文档及实验脚本均由七扇窗科技核心研发团队独立开发，隶属于公司“具身智能教育开源技术组”。该框架已多次用于公司组织的网络教学与具身智能课程实验，在模型训练、算法验证与教学演示中表现出良好效果，受到教育与科研用户的广泛关注与好评。
+项目完全由七扇窗科技主导开发与维护，是公司推动“AI+教育”创新实践的重要开源成果。
+
+### Affiliation Statement
+
+The project “Xunmo: Embodied Intelligent Learning Framework” is initiated and continuously maintained by SevenWindows (Wuhan) Technology Co., Ltd., providing a unified open-source experimental framework for embodied intelligence education and multi-agent learning.
+All codes, documentation, and experimental scripts are independently developed by the company’s core R&D team under the “Embodied Intelligence Education Open Technology Group.” The framework has been repeatedly applied in **online teaching and embodied intelligence training courses**, demonstrating excellent performance in model training, algorithm verification, and interactive instruction. It is a key open-source achievement of the company’s “AI + Education” innovation initiative.
