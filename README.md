@@ -50,15 +50,15 @@ python lerobot/scripts/find_motors_bus_port.py
 
 运行后会出现下面截图：
 
-![image](https://github.com/GuojunD/test/blob/main/tmp/img/image-20251029103115919.png)
+![image](https://github.com/Necther/Embodied-Intelligent-Imitation-Learning-Framework/blob/main/tmp/img/image-20251029103115919.png)
 
 接着按照提示，我们先拔掉随从臂的线，然后按下Enter键，出现：
 
-![image](https://github.com/GuojunD/test/blob/main/tmp/img/image-20251029103132778.png)
+![image](https://github.com/Necther/Embodied-Intelligent-Imitation-Learning-Framework/blob/main/tmp/img/image-20251029103132778.png)
 
 可以看出，我们的随从臂的端口号为/dev/ttyACM0；然后接上刚拔下来的线。重复上述操作，检测主控线的通信端口号：
 
-![image](https://github.com/GuojunD/test/blob/main/tmp/img/image-20251029103149638.png)
+![image](https://github.com/Necther/Embodied-Intelligent-Imitation-Learning-Framework/blob/main/tmp/img/image-20251029103149638.png)
 
 可以看出主控臂的端口号为/dev/ttyACM2。
 
@@ -79,15 +79,15 @@ python lerobot/common/robot_devices/cameras/opencv.py
 
 运行结果如下：
 
-![image](https://github.com/GuojunD/test/blob/main/tmp/img/image-20251029103244839.png)
+![image](https://github.com/Necther/Embodied-Intelligent-Imitation-Learning-Framework/blob/main/tmp/img/image-20251029103244839.png)
 
 可以看到检测到了3个摄像头，其中一个是电脑自带的摄像头。拍摄的照片文件保存在outputs/images_from_opencv_cameras文件夹下：
 
-![image](https://github.com/GuojunD/test/blob/main/tmp/img/image-20251029103301322.png)
+![image](https://github.com/Necther/Embodied-Intelligent-Imitation-Learning-Framework/blob/main/tmp/img/image-20251029103301322.png)
 
 相机0视角图
 
-![image](https://github.com/GuojunD/test/blob/main/tmp/img/image-20251029103317224.png)
+![image](https://github.com/Necther/Embodied-Intelligent-Imitation-Learning-Framework/blob/main/tmp/img/image-20251029103317224.png)
 
 相机4视角图
 
@@ -125,7 +125,7 @@ python lerobot/scripts/configure_arm.py
 
 运行结果如下：
 
-![image](https://github.com/GuojunD/test/blob/main/tmp/img/image-20251029103538831.png)
+![image](https://github.com/Necther/Embodied-Intelligent-Imitation-Learning-Framework/blob/main/tmp/img/image-20251029103538831.png)
 
 ### 3.4标定机械臂
 
@@ -137,17 +137,17 @@ python lerobot/scripts/calibration.py
 
 运行后会出现下列提示：
 
-![image](https://github.com/GuojunD/test/blob/main/tmp/img/image-20251029103630945.png)
+![image](https://github.com/Necther/Embodied-Intelligent-Imitation-Learning-Framework/blob/main/tmp/img/image-20251029103630945.png)
 
 需要分别将随从臂和主控臂移动到零位、旋转位和重置位，各位置的分布如下图所示：
 
-![image](https://github.com/GuojunD/test/blob/main/tmp/img/image-20251029103644832.png)
+![image](https://github.com/Necther/Embodied-Intelligent-Imitation-Learning-Framework/blob/main/tmp/img/image-20251029103644832.png)
 
 
 
 最后可以得到标定文件：
 
-![image](https://github.com/GuojunD/test/blob/main/tmp/img/image-20251029103704489.png)
+![image](https://github.com/Necther/Embodied-Intelligent-Imitation-Learning-Framework/blob/main/tmp/img/image-20251029103704489.png)
 
 可以看到最后输出的两行列表，代表主从机械臂各关节角度，两者之间的角度之差不大于10度即可。若需要重新进行标零位，需要手动删除.cache/calibration/koch文件夹，清除零位标定文件，再次重复标定即可。
 
@@ -166,11 +166,11 @@ python lerobot/scripts/control_robot.py teleoperate \
 
 示例如下：
 
-![image](https://github.com/GuojunD/test/blob/main/tmp/img/image-20251029103759290.png)
+![image](https://github.com/Necther/Embodied-Intelligent-Imitation-Learning-Framework/blob/main/tmp/img/image-20251029103759290.png)
 
 遥操示例截图：
 
-![image](https://github.com/GuojunD/test/blob/main/tmp/img/image-20251029103810422.png)
+![image](https://github.com/Necther/Embodied-Intelligent-Imitation-Learning-Framework/blob/main/tmp/img/image-20251029103810422.png)
 
 ### 3.5.2数据集采集
 
@@ -245,7 +245,7 @@ python lerobot/scripts/train.py \
 
 对于单目标任务，我们采集了100组数据作为训练集，对于多目标任务进行多个数据集混合训练。训练日志如下：
 
-![image](https://github.com/GuojunD/test/blob/main/tmp/img/image-20251029104012507.png)
+![image](https://github.com/Necther/Embodied-Intelligent-Imitation-Learning-Framework/blob/main/tmp/img/image-20251029104012507.png)
 
 ## 5、推理
 
@@ -273,6 +273,6 @@ python lerobot/scripts/control_robot.py record \
 
 以执行向杯子中倒茶这个任务为例，下图展示了ACT算法训练的模型的效果：
 
-![image](https://github.com/GuojunD/test/blob/main/tmp/img/image-20251029104059788.png)
+![image](https://github.com/Necther/Embodied-Intelligent-Imitation-Learning-Framework/blob/main/tmp/img/image-20251029104059788.png)
 
 ​                                                               ACT算法在真实环境任务的效果图
